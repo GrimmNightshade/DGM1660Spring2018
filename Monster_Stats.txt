@@ -1,5 +1,8 @@
 Zaneling - STR 3, DEX 9, CON 5, WIS 4, INT 8, CHA 2,
 
+Zaneling Humanoid - STR 10, STR 10, CON 10, INT 10, CHA 10
+-Base model used for all humanoid interactions.
+
 Zaneling Hive Mind - STR 1, DEX 1, CON 7, WIS 19, INT 19, CHA 7. 
 -Abilitys, Hive mind connection is teliphicly connected with all lesser Zanelings and all share one mind. The hive mind has most of their memories stored.
 +Blind sight 40ft, Weave +10, 
