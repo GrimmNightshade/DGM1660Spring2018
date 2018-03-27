@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Robot.ma
-//Last modified: Tue, Mar 27, 2018 03:20:59 PM
+//Last modified: Tue, Mar 27, 2018 03:23:02 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "206C7EE5-4D8E-5095-CABC-208E82DBF17B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.78244217556873474 8.5210359378353733 -11.475599137314211 ;
-	setAttr ".r" -type "double3" 696.26164723105398 -1266.2000000001103 0 ;
+	setAttr ".t" -type "double3" 8.1563962270308039 8.1099551480424417 -15.820981852843671 ;
+	setAttr ".r" -type "double3" 710.66164723104521 -1289.8000000000848 0 ;
 	setAttr ".rp" -type "double3" -7.2164496600635175e-016 -4.8849813083506888e-014 
 		-1.1368683772161603e-013 ;
 	setAttr ".rpt" -type "double3" 8.0335651574916229e-015 1.3091610342226398e-013 8.2222488282656545e-014 ;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 13.045620228563951;
+	setAttr ".coi" 20.072127787807524;
 	setAttr ".ow" 8.9539294838098229;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -13472,22 +13472,22 @@ createNode objectSet -n "skinCluster1Set";
 	rename -uid "6423272F-47B4-82C6-35E2-EB8E897D1F9D";
 	setAttr ".ihi" 0;
 	setAttr ".vo" yes;
+createNode groupId -n "skinCluster1GroupId";
+	rename -uid "E33FEE10-4973-520C-437E-CFBDEB151F6C";
+	setAttr ".ihi" 0;
+createNode groupId -n "groupId56";
+	rename -uid "160C4375-4B5E-3CE0-D950-A5A38EE1D887";
+	setAttr ".ihi" 0;
 createNode groupParts -n "groupParts19";
 	rename -uid "3E3BE17A-463E-C91D-3B4C-EB98488A0D4A";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "vtx[*]";
-createNode groupId -n "groupId56";
-	rename -uid "160C4375-4B5E-3CE0-D950-A5A38EE1D887";
-	setAttr ".ihi" 0;
 createNode tweak -n "tweak1";
 	rename -uid "688EC7D9-4C30-DE1D-2E1F-CFA3C267DFA4";
 createNode groupParts -n "skinCluster1GroupParts";
 	rename -uid "0F2E51BB-44BE-E459-284B-26A0E1AC6D98";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "vtx[*]";
-createNode groupId -n "skinCluster1GroupId";
-	rename -uid "E33FEE10-4973-520C-437E-CFBDEB151F6C";
-	setAttr ".ihi" 0;
 createNode skinCluster -n "skinCluster1";
 	rename -uid "5E70F90E-4368-E8E5-2D95-19A640FFD692";
 	setAttr -s 3309 ".wl";
@@ -17408,7 +17408,7 @@ connectAttr "L_Ankle.obcc" "skinCluster1.ifcl[34]";
 connectAttr "L_Toe_L1.obcc" "skinCluster1.ifcl[35]";
 connectAttr "L_Toe_M1.obcc" "skinCluster1.ifcl[36]";
 connectAttr "L_Toe_R1.obcc" "skinCluster1.ifcl[37]";
-connectAttr "R_Finger_R2.msg" "skinCluster1.ptt";
+connectAttr "L_Shoulder.msg" "skinCluster1.ptt";
 connectAttr "BodyShapeOrig.w" "groupParts17.ig";
 connectAttr "groupId54.id" "groupParts17.gi";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
